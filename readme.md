@@ -1,26 +1,19 @@
-# Boilerplate and helper functions for react/redux that can be shared amongst FounderLab apps
-
-
-Sidebar
+# react-d3-charts
 -------
-Wrapper for react-sidebar with some useful defaults.
+
+Charting library using D3 to make charts in React woo
 
 ```javascript
-...
-import {Sidebar} from 'fl-react-utils'
+import {D3LineGraph} from 'react-d3-charts'
 
 class SomeComponent extends React.Component {
   render() {
-    const {model} = this.props
+    
+    const data = [{date: new Date(), count: 123}, ...]
+    const area = true
 
     return (
-      <Sidebar
-        sidebar: <SidebarContent />,    // Required, component to be rendered inside the sidebar
-        changeKey: model.id,           // Sidebar will close when this key changes (useful for closing on navigation)
-        disableToggle: false,          // Hide the open/close toggle button when not in docket mode (< 768px)
-      >
-        <div>App content goes here</div>
-      </Sidebar>
+      <D3LineGraph data={data} area={area} />
     )
   }
 }
