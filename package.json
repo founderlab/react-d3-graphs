@@ -1,5 +1,5 @@
 {
-  "name": "react-d3-charts",
+  "name": "react-d3-graphs",
   "version": "0.0.1",
   "description": "Charts for React using D3 v4",
   "main": "lib/index.js",
@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/founderlab/react-d3-charts.git"
+    "url": "https://github.com/founderlab/react-d3-graphs.git"
   },
   "scripts": {
     "prepublish": "rm -rf ./lib && babel ./src --ignore '/node_modules/' --out-dir ./lib",
